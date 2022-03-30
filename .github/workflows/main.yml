@@ -37,8 +37,8 @@ jobs:
         tail run.log   
     - name: Commit log
       env:
-        NAME: admin
-        EMAIL: admin@tyv6l.onmicrosoft.com
+        NAME: auto_renew
+        EMAIL: auto_renew@tyv6l.onmicrosoft.com
       run: |
         git config --global user.name "$NAME"
         git config --global user.email "$EMAIL"
