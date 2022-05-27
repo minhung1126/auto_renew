@@ -26,7 +26,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Run jar
+    - name: Run jar 1
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
@@ -36,6 +36,96 @@ jobs:
       run: |
         java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
         tail run.log   
+    - name: Run jar 2
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 3
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 4
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 5
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 6
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 7
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 8
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 9
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
+    - name: Run jar 10
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        TENANT_GUID: ${{ secrets.TENANT_GUID }}
+        USERNAME: ${{ secrets.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: |
+        java -jar ./officeE5-1.0-SNAPSHOT-jar-with-dependencies.jar "$CLIENT_ID" "$USERNAME" "$PASSWORD" "$TENANT_GUID" "$CLIENT_SECRET"  >> ./run.log
+        tail run.log 
     - name: Commit log
       env:
         NAME: auto_renew
