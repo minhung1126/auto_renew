@@ -9,8 +9,9 @@ on:
     - cron: '0/10 8-20 * * *'
   release:
     types: [published]
-  watch:
-    types: [started]
+  # watch:
+    # types: [started]
+  workflow_dispatch:
 
 jobs: 
   Call-APi:
